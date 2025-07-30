@@ -1,0 +1,16 @@
+   {% extends 'index.html'%}
+   {% load static %}
+
+
+   {% block body_class %}pictures_body{% endblock%}
+
+   {% block content %}
+   <div class="grid">
+    <div class="pics">
+        <img src="{% static 'img/img1.jpg'%}" alt="" class="images"/>
+        <img src="{% static 'img/img2.jpg'%}" alt="" class="images"/>
+        <img src="{% static 'img/img3.jpg'%}" alt="" class="images"/>
+    </div>
+   </div>
+
+    {% endblock %}
